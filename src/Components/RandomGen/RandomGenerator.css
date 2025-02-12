@@ -1,0 +1,76 @@
+.RandomGenerator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+label{
+    padding: 10px;
+}
+.selectBoxContainer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+button{
+    .Generate{
+        border: 8px;
+        padding: 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .RandomGenerator {
+        .selectBoxContainer,.textBox{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+.Generate{
+    min-width: 180px;
+    min-height: 100px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    align-items: center;
+    font-size: large;
+    border: 2px solid var(--snd-color);
+    border-radius: 10px;
+    flex-direction: column;
+    .generatedText{
+        padding: 10px;
+    }
+    .generated{
+        font-size: xx-large !important;
+        color: var(--spl-text-color);
+        font-weight: bolder;
+        transition: 1s;
+    }
+}
+.Generate:hover{
+    cursor: pointer;
+    font-size: larger;
+    border: 3px solid var(--text-color);
+}
+
+.textBox{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    textarea{
+        height: 20vh;
+        text-align: left;
+        justify-content: left;
+        overflow: auto;
+        scrollbar-width: thin;
+        scrollbar-color: var(--text-color) var(--bg-color);
+    }
+}
